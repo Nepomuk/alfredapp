@@ -236,6 +236,37 @@ echo $leo-&gt;getTranslations($in);</string>
 				<string>require('leo.php');
 
 $in = "{query}";
+$leo = new Leo("itde");
+echo $leo-&gt;getTranslations($in);</string>
+				<key>subtext</key>
+				<string>Translate with Leo (German/Italian)</string>
+				<key>title</key>
+				<string>Leo Dictionary</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>9066ECA5-A314-4CB1-98F4-5171E14A6706</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>36</integer>
+				<key>keyword</key>
+				<string>di</string>
+				<key>runningsubtext</key>
+				<string>Retrieving suggestions from Leo</string>
+				<key>script</key>
+				<string>require('leo.php');
+
+$in = "{query}";
 $leo = new Leo("esde");
 echo $leo-&gt;getTranslations($in);</string>
 				<key>subtext</key>
